@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root {
+  --bg-color:linear-gradient(to right, #abbaab, #fbfbfb);
+  --bg-container:#ffffff64;
+  --font-family: 'Comfortaa', cursive;
+  --spacing: 0.1rem;
+  --radius: 6px;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --btn-color: #abbaab36;
+  --font-color: #363e36;
+  --font-color-p: #7e8e7e;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--font-color);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+
+/*
+=============== 
+Questions
+===============
+*/
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70vw;
+  margin: 5rem auto;
+  background-color: var(--bg-container);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  display: grid;
+  gap: 1rem 2rem;
+}
+.container h3 {
+  line-height: 1.2;
+  font-weight:bolder;
+  font-size:x-large;
+  margin: 20px;
+  letter-spacing: var(--spacing);
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.question {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-grey-special);
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.question p {
+  color: var(--font-color-p);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question header h4 {
+  margin-bottom: 0;
+}
+.btn {
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--btn-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--font-color);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+.underline {
+  width: 150px;
+  height: 2px;
+  background:var(--font-color-p);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  align-items: center;
+}
